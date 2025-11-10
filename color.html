@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Background</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 2em;
+            transition: background-color 1s linear;
+        }
+    </style>
+</head>
+<body>
+    Rainbow Effect
+    <script>
+        const colors = [
+            "#FF0000", // Red
+            "#FF7F00", // Orange
+            "#FFFF00", // Yellow
+            "#00FF00", // Green
+            "#0000FF", // Blue
+            "#4B0082", // Indigo
+            "#8B00FF"  // Violet
+        ];
+
+        let index = 0;
+
+        function changeColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length; // Loop back to start
+        }
+
+        // Change color every 500 milliseconds
+        setInterval(changeColor, 500);
+    </script>
+</body>
+</html>
