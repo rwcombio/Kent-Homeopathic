@@ -8,18 +8,11 @@
         html, body {
             height: 100%;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: white;
-            font-size: 2em;
             transition: background-color 1s linear;
         }
     </style>
 </head>
 <body>
-    Rainbow Effect
     <script>
         const colors = [
             "#FF0000", // Red
@@ -38,8 +31,7 @@
             index = (index + 1) % colors.length; // Loop back to start
         }
 
-        // Change color every 500 milliseconds
-        setInterval(changeColor, 500);
+        setInterval(changeColor, 500); // ہر 0.5 سیکنڈ بعد بدلتا رہے
     </script>
 </body>
 </html>
